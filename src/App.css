@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+*{
+padding: 0;
+margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  background-color: #f7f7f7;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+                                  /* REGISTER */
+.Register .card{
+  border: none;
+}
+.Register form{
+  padding: 25px 40px;
+}
+.Register label{
+  color: #7e7e7e;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 20px;
+}
+.Register{
+  padding-top: 10px;
+}
+.Register button{
+  background-color: #eb8153;
+  border: #eb8153;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Register Button:hover{
+  background-color: #eb8153;
+  border: #eb8153;
+}
+.Register p{
+  padding-top: 10px;
+  color: #7e7e7e;
+  font-size: 1.1rem;
+}
+.Register  p .a{
+  color: #eb8153; 
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+                                  /* LOGIN */
+
+.Login .form-row label{
+  font-size: 1.1rem;
+}
+.Register .link{
+  text-decoration: none;
+  color: #7e7e7e;
+}
+.Register .link:hover{
+  color: #eb8153;
+}
+
+                                    /* FORGET */
+.Forgetpass{
+  padding-top: 7%;
+}
+
+.Forgetpass h4{
+  font-weight: 700;
+}
+.Forgetpass .card{
+  padding-bottom: 15px;
 }
