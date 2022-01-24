@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link,useNavigate} from "react-router-dom";
 import { useFormik } from "formik";
 import env from 'react-dotenv';
 import * as Yup from "yup";
 import axios from "axios";
 import img from "../assets/image/logo-full.png";
+
  export default function  Login()  {
 
+    const navigate = useNavigate();
     const {handleSubmit, handleChange,values,touched,errors} = useFormik({
         initialValues:{
             email:"",
@@ -21,7 +23,9 @@ import img from "../assets/image/logo-full.png";
                     password:password
                 })
                 .then( res =>{
-                console.log(res.data)
+                    // localStorage.set("user_token",res.data.token);
+                    console.log(res.data.token)
+                    navigate('/Dashboard');
                  })
                  .catch( err =>{
                 console.log(err.data)
