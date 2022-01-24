@@ -3,7 +3,7 @@ padding: 0;
 margin: 0;
 }
 .App{
-  background-color: #f7f7f7;
+
   min-height: 100vh;
 }
 
@@ -22,6 +22,7 @@ margin: 0;
 }
 .Register{
   padding-top: 10px;
+  background-color: #f7f7f7;
 }
 .Register button{
   background-color: #eb8153;
@@ -65,4 +66,93 @@ margin: 0;
 }
 .Forgetpass .card{
   padding-bottom: 15px;
+}
+                                        /* dashboard header */
+nav{
+  padding: 5px 30px 5px !important;
+  margin: none !important;
+}
+.navbar  form{
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.navbar  form input{
+ border: none;
+}
+.navbar  .fa-search{
+  font-size: 20px !important;
+  padding: 9px 0px 0px 20px;
+  color:  #7e7e7e;
+}
+.navbar  .fa{
+  font-size: 26px;
+}
+.navbar  .fa-search:hover{
+ color: #eb8153;
+}
+nav ul .fa{
+    color: #2b2b2b;
+    line-height: 2;
+    padding-right: 25px;
+}
+nav ul .last{
+    line-height: 1.6;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul .last:hover{
+  text-decoration: none;
+  color: #2b2b2b;
+}
+nav ul .last small{
+    font-size: 15px;
+    color: #89879f;
+    font-weight: 400;
+}
+nav ul .last span,.avater{
+  color: black;
+}
+nav ul .li-last{
+  border-left:  #EEEEEE 1px solid;
+}
+nav ul .last span{
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+}
+.nav-item .btn{
+  background: rgba(235, 129, 83, 0.2);
+  color: #eb8153;
+  font-weight: 500;
+}
+.nav-item .btn:hover{
+  background:#eb8153;
+  color: white;
+  font-weight: 500;
+}
+.btn-link{
+  padding-left: 20px;
+}
+.nav1{
+  border-bottom: 1px   #EEEEEE solid;
+}
+.nav-header .navbar-brand h3{
+  padding: 18px 15px 0px;
+  color: #000;
+  font-weight: 700;
+}
+.nav-header .navbar-brand{
+  padding: 0%;
+}
+.nav-header .btn{
+  padding: 0%;
+  transition: .5s;
+}
+.nav-header .btn:hover{
+  color: #eb8153;
+  transition: .5s;
+}
+.nav-header .fa-arrow-right{
+  width: 50px;
 }
