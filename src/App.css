@@ -84,16 +84,18 @@ nav{
   padding: 9px 0px 0px 20px;
   color:  #7e7e7e;
 }
-.navbar  .fa{
-  font-size: 26px;
-}
 .navbar  .fa-search:hover{
  color: #eb8153;
 }
 nav ul .fa{
     color: #2b2b2b;
     line-height: 2;
-    padding-right: 25px;
+    font-size: 26px;
+    padding: 0px 10px;
+}
+nav ul .fa:hover{
+  background-color: rgba(235, 129, 83, 0.1);
+  border-radius: 10px;
 }
 nav ul .last{
     line-height: 1.6;
@@ -155,4 +157,154 @@ nav ul .last span{
 }
 .nav-header .fa-arrow-right{
   width: 50px;
+}
+nav .brand2{
+  padding-left: 17rem;
+  font-weight: 500;
+  transition: .5s;
+}
+nav .show{
+  transition: .5s;
+  padding-left: 7rem;
+  font-weight: 500;
+}
+.btn .fa-align-right{
+  font-size: 25px;
+}
+
+                                          /* dashboard menubar */
+.Menubar {
+  width: 17.5rem;
+  padding-bottom: 0;
+  height: calc(100% - 72px);
+  top: 4.5rem;
+  padding-top: 0;
+  z-index: 1;
+  transition: all .2s ease;
+  box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 2%);
+  overflow-y: scroll;
+  overflow-x: none !important;
+  position: fixed;
+}
+
+.Menubar::-webkit-scrollbar{
+  width: 6px;
+}
+.Menubar::-webkit-scrollbar-track{
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.Menubar::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background:rgba(0, 0, 0, .4);
+}
+.Menubar .main-profile {
+  text-align: center;
+  padding: 20px 0px;
+  position: relative;
+}
+.Menubar .main-profile img {
+  vertical-align: middle;
+  border-style: none;
+}
+.mm-show ul li{
+  list-style: none;
+  letter-spacing: 0.05rem;
+}
+.mm-show ul{
+  padding: 0;
+  padding-left: 10px;
+}
+ul .menubar-li-1{
+  color: #999999;
+  font-size: 0.90rem;
+  margin-bottom: 10px;
+}
+ul span{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.example-collapse-text ul li{
+  padding: 15px 7px;
+  list-style: circle;
+}
+.example-collapse-text ul li .manulink{
+  text-decoration: none !important;
+  font-size: 17px;
+  color: #7e7e7e;
+  font-weight: 500;
+}
+.example-collapse-text ul li:hover{
+  background: #f5f5f5;
+  text-decoration: none;
+  color: #eb8153;
+  padding: 15px 7px;
+  transition: .5;
+}
+.example-collapse-text ul li:hover .manulink{
+  color: #eb8153;
+  transition: .5;
+}
+.activeRoute {
+  background: #f5f5f5;
+  color: #eb8153;
+}
+.example-collapse-text ul{
+  padding-left: 1.5rem
+}
+.mm-show .fa{
+  color: #7e7e7e;
+  margin-right: 20px;
+}
+ .menubar-li-2:hover .fa,.menubar-li-2:hover span{
+  color: #eb8153;
+}
+.menubar-li-2 .fa-angle-right{
+  font-size: 20px;
+  padding: 0px 48px;
+  transition: .5s;
+}
+.menubar-li-2 .fa-change{
+  padding: 0px 48px;
+  transform: rotate(90deg);
+  transition: .5s;
+}
+.menubar-li-2{
+  cursor: pointer ;
+}
+.main-profile img{
+  border-radius: 10px;
+  width: 70px;
+}
+.main-profile .image{
+  margin-bottom: 15px;
+}
+.main-profile .image .fa{
+  position: absolute;
+  color: #eb8153;
+  font-size: 22px;
+  left:10rem;
+  top: 0.8rem;
+}
+.main-profile{
+  margin-top: 20px;
+}
+.main-profile h5{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+} 
+.main-profile span{
+  font-weight: 400;
+}
+/* Dashboard views */
+.overflow{
+  overflow: hidden;
+  background-color:#f7f7f7;
+  margin-left: 279.4px;
+}
+.view-body{
+  min-height: 100%;
+  width: 79%;
+  padding: 40px 40px 0px;
 }
