@@ -3,7 +3,6 @@ padding: 0;
 margin: 0;
 }
 .App{
-
   min-height: 100vh;
 }
 
@@ -60,7 +59,6 @@ margin: 0;
 .Forgetpass{
   padding-top: 7%;
 }
-
 .Forgetpass h4{
   font-weight: 700;
 }
@@ -69,20 +67,21 @@ margin: 0;
 }
                                         /* dashboard header */
 nav{
-  padding: 5px 30px 5px !important;
+  padding: 0px 0px 0px !important;
   margin: none !important;
 }
 .navbar  form{
   padding-right: 10px;
   border-radius: 5px;
 }
-.navbar  form input{
+nav .navbar  form input{
  border: none;
 }
-.navbar  .fa-search{
+ .navbar  .fa-search{
   font-size: 20px !important;
-  padding: 9px 0px 0px 20px;
+  padding: 9px 3px 0px 20px;
   color:  #7e7e7e;
+  cursor: pointer;
 }
 .navbar  .fa-search:hover{
  color: #eb8153;
@@ -90,11 +89,96 @@ nav{
 nav ul .fa{
     color: #2b2b2b;
     line-height: 2;
-    font-size: 26px;
+    font-size: 22px;
     padding: 0px 10px;
+}
+ .card .card-header{
+  display: flex !important;
+  justify-content: space-between;
+  background: none;
+  padding: 0 1rem .7rem;
+}
+.card{
+  border: none !important;
 }
 nav ul .fa:hover{
   background-color: rgba(235, 129, 83, 0.1);
+  border-radius: 10px;
+}
+.contacts{
+  list-style: none;
+  padding-left: 0px;
+}
+.contacts .name-first-letter {
+  background: #f7f7f7;
+  padding: 4px 1rem;
+  font-weight: 700;
+  color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.contacts  .user_info span {
+  font-size: 15px;
+  color: #000;
+  display: block;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  max-width: 170px;
+}
+.contacts .img_cont{
+  margin-right: 20px;
+} 
+.contacts .user_info .text-primary{
+  font-size: 13px;
+  margin-bottom: 0;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  max-width: 170px;
+  color: #eb8153 !important;
+  margin-bottom: 10px;
+}
+.contacts .user_info .text-secondary{
+  font-size: 13px;
+  margin-bottom: 0;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  max-width: 170px;
+  margin-bottom: 10px;
+}
+.contacts .active{
+  padding:8px 15px 0px;
+  border-bottom:1px solid #eee;
+}
+.contacts .active:hover{
+  background:#f4f7ff;
+  cursor: pointer;
+}
+.contacts .d-flex{
+  justify-content: space-between;
+}
+.contacts .d-flex-2{
+  display: flex;
+}
+.contacts  .btn-danger{
+  margin-left: 5px;
+}
+ .card .fa-plus,.search,.fa-dot{
+  color: #000;
+  background: #f3f1f1;
+  padding: 10px 10px;
+  cursor: pointer;
   border-radius: 10px;
 }
 nav ul .last{
@@ -103,12 +187,20 @@ nav ul .last{
     display: flex;
     justify-content: center;
 }
+.card-head p {
+  line-height: 1.2;
+  font-size: 12px;
+  color: #7e7e7e;
+}
+.card-head h6 {
+  font-size: 15px;
+}
 nav ul .last:hover{
   text-decoration: none;
   color: #2b2b2b;
 }
 nav ul .last small{
-    font-size: 15px;
+    font-size: 12px;
     color: #89879f;
     font-weight: 400;
 }
@@ -119,19 +211,31 @@ nav ul .li-last{
   border-left:  #EEEEEE 1px solid;
 }
 nav ul .last span{
-    font-size: 20px;
+    font-size: 15px;
     color: #000;
     font-weight: 700;
 }
+nav .avater{
+  margin: 7px 11px 0px 0px;
+}
+.nav-2{
+  padding: 5px 22px !important;
+}
+.nav-2 li{
+  padding: 0px 0px 0px 5px ;
+}
 .nav-item .btn{
-  background: rgba(235, 129, 83, 0.2);
+  background: rgba(247, 168, 135, 0.2);
   color: #eb8153;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.7rem;
+  border: rgba(247, 168, 135, 0.2) solid 1px;
 }
 .nav-item .btn:hover{
   background:#eb8153;
   color: white;
-  font-weight: 500;
+  border: rgba(247, 168, 135, 0.2) solid 1px;
+  font-weight: 600;
 }
 .btn-link{
   padding-left: 20px;
@@ -142,7 +246,34 @@ nav ul .last span{
 .nav-header .navbar-brand h3{
   padding: 18px 15px 0px;
   color: #000;
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 20px;
+}
+nav .profile-toggle{
+  position: absolute;
+  padding: 20px 0px;
+  padding-left: 0px !important;
+  background: white;
+  border-radius: 7px;
+  z-index: 1;
+  min-width: 200px ;
+  right: 15px;
+  top: 64px;
+  box-shadow: 0 0 37px rgb(8 21 66 / 5%)
+}
+nav .profile-toggle li, .profile-toggle .profile-link{
+  font-size: 13px;
+  font-weight: 600;
+  color: #89879f;
+  cursor: pointer;
+}
+nav .profile-toggle li:hover{
+  background: #f5f5f5;
+
+}
+nav .profile-toggle .fa{
+  font-size: 15px;
+  color: #eb8153;
 }
 .nav-header .navbar-brand{
   padding: 0%;
@@ -162,19 +293,136 @@ nav .brand2{
   padding-left: 17rem;
   font-weight: 500;
   transition: .5s;
+  margin: 0 !important;
+  font-size: 1.1rem !important;
 }
 nav .show{
   transition: .5s;
-  padding-left: 7rem;
+  padding-left: 5rem;
+  font-weight: 500;
+  margin: 0 !important;
+  font-size: 1.1rem !important;
+}
+nav .btn-right{
+  margin-left: 40px;
+}
+nav .btn-right{
+  margin-left: 0px;
+}
+nav .btn .fa-align-right{
+  font-size: 22px;
+}
+nav .example-collapse-text{
+  position: absolute;
+  padding: 20px 20px;
+  background: white;
+  border-radius: 7px;
+  z-index: 1;
+  min-width: 310px;
+  right: 15px;
+  top: 80px;
+  box-shadow: 0 0 37px rgb(8 21 66 / 5%)
+}
+ .offcanvas{
+  width: 25% !important;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+  color: white !important;
+}
+.ant-tabs-ink-bar{
+  background-color: red !important;
+}
+.ant-tabs-ink-bar:hover{
+  background-color: red !important;
+}
+.ant-tabs-nav-list{
+  background: #6418C3;
+  border: 0;
+  color: white;
+  width: 100% !important;
+  padding: 10px 20px 0px !important;
   font-weight: 500;
 }
-.btn .fa-align-right{
-  font-size: 25px;
+.ant-tabs-top > .ant-tabs-nav{
+  margin: 0 0 10px 0;
 }
+.ant-tabs-tab:hover{
+  color: white !important;
+}
+.tab-ul .TabPane{
+  background-color: white;
+  color: #000;
+}
+.ant-tabs-tab + .ant-tabs-tab {
+  margin: 0 0 0 62px !important;
+}
+.tab-ul{
+  padding-left: 0;
+  margin-bottom: 0;
+}
+nav li .timeline{
+  position: absolute;
+  padding: 20px 20px;
+  background: white;
+  border-radius: 7px;
+  z-index: 1;
+  width: 300px;
+  right: 200px;
+  top: 80px;
+  box-shadow: 0 0 37px rgb(8 21 66 / 5%)
+}
+nav li .timeline span{
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+nav li .timeline h6{
+  font-weight: 600;
+  font-size: 17px;
+}
+nav .example-collapse-text ul li{
+  list-style: none;
+}
+nav .bell .example-collapse-text li{
+  margin-bottom: 10px;
+  border-bottom: 1px solid  #eaeaea;
+  padding-bottom: 10px;
+}
+nav .example-collapse-text li img{
+  width: 50px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+nav .example-collapse-text li .profile-content h6{
+  font-weight: 700;
+}
+nav .nav-header .logo{
+  width: 50px;
+  height: 56px;
+}
+nav .example-collapse-text li .profile-content small{
+  color:#7e7e7e;
+}
+nav .example-collapse-text li{
+  display: flex;
+  text-align: center;
+}
+nav .example-collapse-text .all-notification{
+  text-decoration: none;
+  color: #7e7e7e;
+}
+nav .example-collapse-text .all-notification small{
+  color: #7e7e7e;
+}
+nav .example-collapse-text .all-notification .fa{
+  color: #7e7e7e;
+  font-size: 15px;
+}
+
 
                                           /* dashboard menubar */
 .Menubar {
-  width: 17.5rem;
+  width: 17rem;
   padding-bottom: 0;
   height: calc(100% - 72px);
   top: 4.5rem;
@@ -186,7 +434,38 @@ nav .show{
   overflow-x: none !important;
   position: fixed;
 }
-
+.Menubar .main-profile p{
+   color: #7e7e7e;
+}
+.menubackground .menushow{
+  width: 4rem;
+  padding-bottom: 0;
+  height: calc(100% - 72px);
+  top: 4.5rem;
+  padding-top: 0;
+  z-index: 1;
+  transition: all .2s ease-in;
+  box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 2%);
+  overflow-y: scroll;
+  overflow-x: none !important;
+  position: fixed;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.menubackground .menu-fa-end,.menutheme .menu-fa-end{
+  padding: 10px;
+  font-size: 22px;
+  color:  #969BA0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.menubackground .menu-fa-end:hover{
+ background-color: #eb8153;
+ color: white;
+}
+.menubackground{
+  background-color: white;
+}
 .Menubar::-webkit-scrollbar{
   width: 6px;
 }
@@ -207,41 +486,41 @@ nav .show{
   vertical-align: middle;
   border-style: none;
 }
-.mm-show ul li{
+.Menubar .mm-show ul li{
   list-style: none;
   letter-spacing: 0.05rem;
 }
-.mm-show ul{
+.Menubar .mm-show ul{
   padding: 0;
-  padding-left: 10px;
+  padding-left: 20px;
 }
-ul .menubar-li-1{
+.Menubar ul .menubar-li-1{
   color: #999999;
   font-size: 0.90rem;
   margin-bottom: 10px;
 }
-ul span{
+.Menubar ul span{
   font-size: 1.2rem;
   font-weight: 500;
 }
-.example-collapse-text ul li{
-  padding: 15px 7px;
+.Menubar .example-collapse-text ul li{
+  padding: 10px 7px;
   list-style: circle;
 }
-.example-collapse-text ul li .manulink{
+.Menubar .example-collapse-text ul li .manulink{
   text-decoration: none !important;
   font-size: 17px;
   color: #7e7e7e;
   font-weight: 500;
 }
-.example-collapse-text ul li:hover{
+.Menubar .example-collapse-text ul li:hover{
   background: #f5f5f5;
   text-decoration: none;
   color: #eb8153;
-  padding: 15px 7px;
+  padding: 10px 7px;
   transition: .5;
 }
-.example-collapse-text ul li:hover .manulink{
+.Menubar .example-collapse-text ul li:hover .manulink{
   color: #eb8153;
   transition: .5;
 }
@@ -253,7 +532,7 @@ ul span{
   padding-left: 1.5rem
 }
 .mm-show .fa{
-  color: #7e7e7e;
+  color: #b3b3b3;
   margin-right: 20px;
 }
  .menubar-li-2:hover .fa,.menubar-li-2:hover span{
@@ -261,16 +540,17 @@ ul span{
 }
 .menubar-li-2 .fa-angle-right{
   font-size: 20px;
-  padding: 0px 48px;
+  padding: 0px 40px;
   transition: .5s;
 }
 .menubar-li-2 .fa-change{
-  padding: 0px 48px;
+  padding: 0px 40px;
   transform: rotate(90deg);
   transition: .5s;
 }
 .menubar-li-2{
-  cursor: pointer ;
+  cursor: pointer;
+  color: #b3b3b3;
 }
 .main-profile img{
   border-radius: 10px;
@@ -297,14 +577,95 @@ ul span{
 .main-profile span{
   font-weight: 400;
 }
-/* Dashboard views */
+
+                                                          /* Dashboard views */
 .overflow{
   overflow: hidden;
-  background-color:#f7f7f7;
-  margin-left: 279.4px;
+  margin-left: 272px;
+  transition: .5s;
+}
+.overflow-2{
+  overflow: hidden;
+  margin-left: 60px;
+  transition: .5s;
 }
 .view-body{
   min-height: 100%;
-  width: 79%;
+  min-width: 100%;
+  background-color:#f7f7f7;
   padding: 40px 40px 0px;
+}
+
+                                                              /* theme */
+.headertheme{
+  background: #3B3363;
+}
+.headertheme .nav1{
+  border-bottom: 1px #473F72 solid;
+}
+.headertheme ul .li-last {
+  border-left: #473F72 1px solid;
+}
+.headertheme .fa, .headertheme span, .headertheme .nav-header .navbar-brand h3,.headertheme ul .last span{
+  color: white;
+}
+.headertheme form,.headertheme form input{
+  background: #2C254A !important;
+  border: 1px solid #2C254A !important;
+  color: white !important;
+}
+.headertheme form .fa-search{
+  color: #7e7e7e;
+}
+.headertheme form .fa-search:hover{
+  color: white !important;
+}
+.headertheme .nav-2,.headertheme .nav-item .btn{
+  color: white;
+  border: none;
+}
+.menutheme .Menubar {
+  width: 17rem;
+  padding-bottom: 0;
+  height: calc(100% - 72px);
+  top: 4.5rem;
+  padding-top: 0;
+  z-index: 1;
+  transition: all .2s ease;
+  box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 2%);
+  overflow-y: scroll;
+  overflow-x: none !important;
+  position: fixed;
+  background-color:#3B3363 ;
+}
+.menutheme .Menubar .fa-cog{
+  color: white;
+}
+.menutheme .menushow{
+  background-color:#3B3363 ;
+  width: 4rem;
+  padding-bottom: 0;
+  height: calc(100% - 72px);
+  top: 4.5rem;
+  padding-top: 0;
+  z-index: 1;
+  transition: all .2s ease-in;
+  box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 2%);
+  overflow-y: scroll;
+  overflow-x: none !important;
+  position: fixed;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.menutheme .Menubar h5{
+  color: white;
+}
+.menutheme  .main-profile p{
+  color: #828690;
+}
+.view-body2{
+  min-height: 100%;
+  min-width: 100%;
+  padding: 40px 40px 0px;
+  background-color: #2C254A ;
 }
