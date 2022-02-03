@@ -1,6 +1,7 @@
 import Menubar from "../components/menubar";
 import Navbar from "../components/navbar";
 import { useSelector} from "react-redux";
+import Home from "../views/home";
 export default function Dashboard(){
     const toggle = useSelector(state => state.toggle)
     const theme = useSelector(state=>state.theme)
@@ -14,11 +15,7 @@ export default function Dashboard(){
                     </div>
                     <div className={toggle?"overflow":"overflow-2"}>    
                         <div className={theme?"view-body":"view-body2"}>
-                            {/* Dashboard routes goes here */}
-                                sorry <br/>
-                                ekrghoirhot<br/>
-                                kegoierngtorg<br/>
-                                rgoirenh<br/>
+                            <Home/>
                         </div>
                     </div>
                 </div>
