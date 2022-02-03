@@ -396,10 +396,6 @@ nav .example-collapse-text li img{
 nav .example-collapse-text li .profile-content h6{
   font-weight: 700;
 }
-nav .nav-header .logo{
-  width: 50px;
-  height: 56px;
-}
 nav .example-collapse-text li .profile-content small{
   color:#7e7e7e;
 }
@@ -427,7 +423,6 @@ nav .example-collapse-text .all-notification .fa{
   height: calc(100% - 72px);
   top: 4.5rem;
   padding-top: 0;
-  z-index: 1;
   transition: all .2s ease;
   box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 2%);
   overflow-y: scroll;
@@ -443,7 +438,6 @@ nav .example-collapse-text .all-notification .fa{
   height: calc(100% - 72px);
   top: 4.5rem;
   padding-top: 0;
-  z-index: 1;
   transition: all .2s ease-in;
   box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 2%);
   overflow-y: scroll;
@@ -458,11 +452,32 @@ nav .example-collapse-text .all-notification .fa{
   color:  #969BA0;
   cursor: pointer;
   border-radius: 5px;
+  margin-top: 20px;
 }
 .menubackground .menu-fa-end:hover{
  background-color: #eb8153;
  color: white;
 }
+.menutheme .menu-fa-end:hover{
+  background-color: #eb8153;
+ color: white;
+}
+.ul{
+   /* position: absolute; */
+    left: 5rem;
+    top: 0;
+    width: 12rem; 
+    z-index: 10001 !important;
+    /* display: none; */
+    padding-left: 1px !;
+    height: auto !important;
+    box-shadow: 0px 0px 40px 0px rgb(82 63 105 / 10%);
+    border-radius: 6px;
+    margin-left: 0;
+    border: 0;
+    background: #fff;
+}
+
 .menubackground{
   background-color: white;
 }
@@ -590,10 +605,40 @@ nav .example-collapse-text .all-notification .fa{
   transition: .5s;
 }
 .view-body{
-  min-height: 100%;
+  height: 100vh;
   min-width: 100%;
   background-color:#f7f7f7;
   padding: 40px 40px 0px;
+}
+                                                      /* HOME */
+.form-head h2 {
+  flex: 7;
+  font-size: 34px;
+  font-weight: 600;
+}
+.form-head span{
+  position: absolute;
+  top: 9.6rem;
+  left: 62.5rem;
+}
+.form-head .btn{
+  margin-left: 2rem;
+  background-color: #6418C3;
+  border-color: #6418C3;
+}
+.form-head .btn:hover{
+  background-color: #4f0f9e;
+  border-color: #4c1096;
+}
+.form-head .weather{
+  padding-left: 3rem;
+  background-color: white;
+}
+.form-head select{
+  border: none !important;
+}
+.form-head .btn .fa{
+  margin-right: 10px;
 }
 
                                                               /* theme */
@@ -648,7 +693,6 @@ nav .example-collapse-text .all-notification .fa{
   height: calc(100% - 72px);
   top: 4.5rem;
   padding-top: 0;
-  z-index: 1;
   transition: all .2s ease-in;
   box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 2%);
   overflow-y: scroll;
@@ -668,4 +712,14 @@ nav .example-collapse-text .all-notification .fa{
   min-width: 100%;
   padding: 40px 40px 0px;
   background-color: #2C254A ;
+}
+.s-section .card{
+  height: calc(100% - 40px);
+}
+.s-section .card-coin h2 {
+  font-size: 22px;
+}
+.s-section .currency-icon {
+  height: 65px;
+  width: 65px;
 }

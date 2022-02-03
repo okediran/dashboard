@@ -6,7 +6,6 @@ import { useSelector} from "react-redux";
 export default function Menubar() {
     const [open, setOpen] = useState(false);
     const toggle = useSelector(state => state.toggle);
-    const theme = useSelector(state=>state.theme)
     return (
         <div className={toggle ? "Menubar":"menushow"}>
            {toggle ? <div>
@@ -34,12 +33,6 @@ export default function Menubar() {
                                 <div className="example-collapse-text">
                                     <ul>
                                         <li>
-                                        <NavLink className='manulink active' activeclassName="activeRoute" to="">Dashbaord Light</NavLink> 
-                                        </li>
-                                        <li>
-                                        <NavLink className='manulink' activeclassName="activeRoute" to="">Dashboard Dark</NavLink> 
-                                        </li>
-                                        <li>
                                         <NavLink className='manulink' activeclassName="activeRoute" to="">Wallet</NavLink>
                                         </li>
                                         <li>
@@ -60,7 +53,17 @@ export default function Menubar() {
                         </li>
                     </ul>
                 </div>
-            </div>: <i className="fa fa-th menu-fa-end"></i> }
+            </div>: 
+            <div className="ul-fa-end">
+                 <i className="fa fa-th menu-fa-end"></i>
+                    <div className="ul">
+                        <li>Wallet</li>
+                        <li>Transactions</li>
+                        <li>Coin Details</li>
+                        <li>portofolio</li>
+                        <li>Market Capital</li>
+                    </div>
+            </div>  }
         </div>
     );
 }
