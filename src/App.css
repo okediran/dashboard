@@ -595,17 +595,15 @@ nav .example-collapse-text .all-notification .fa{
 
                                                           /* Dashboard views */
 .overflow{
-  overflow: hidden;
   margin-left: 272px;
   transition: .5s;
 }
 .overflow-2{
-  overflow: hidden;
   margin-left: 60px;
   transition: .5s;
 }
 .view-body{
-  height: 100vh;
+  min-height: 100vh;
   min-width: 100%;
   background-color:#f7f7f7;
   padding: 40px 40px 0px;
@@ -639,6 +637,265 @@ nav .example-collapse-text .all-notification .fa{
 }
 .form-head .btn .fa{
   margin-right: 10px;
+}
+.Home .s-section .card{
+  padding: 10px 0px;
+}
+.Home .s-section .card-coin h2 {
+  font-size: 22px;
+}
+.Home .s-section .currency-icon {
+  height: 65px;
+  width: 65px;
+}
+.Home .s-section .m-t35 {
+    margin-top: 35px;
+}
+.Home .s-section .currency-icon{
+  margin-top: -65px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 25%);
+  border-radius: 100%;
+  /* -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s; */
+   transition: all 0.5s;
+}
+.market-line .apexcharts-canvas{
+  width: 617px; 
+  height: 300px
+}
+.Home .t-section{
+  margin-top: 40px;
+  min-width: 100% !important;
+}
+ table{
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #7e7e7e;
+}
+table th, table td {
+  border-color: #EEEEEE;
+  padding: 12px 9px;
+}
+.Home .btn-link {
+  height: 40px;
+  width: 50px;
+  background: #6418C3;
+  display: block;
+  line-height: 40px;
+  font-size: 26px;
+  left: 13rem;
+  color: white;
+  border-radius: 0.35rem;
+  margin-bottom: -18px;
+  position: absolute;
+}
+.caret .btn-link:hover{
+  text-decoration: none;
+  color: white;
+}
+table tr:hover{
+  background-color: rgb(16, 16, 139);
+  color: white;
+  border-radius: 10px !important;
+}
+.Home .monero{
+  margin-left: 10px;
+}
+.tbl-orders .currency-icon{
+  height:45px;
+  width: 45px;
+  margin-right: 10px;
+}
+.tbl-orders {
+  background: #F4F4F4;
+  border-radius: 0.35rem;
+  padding: 10px 12px;
+}
+.t-section .fa-ellipsis-v{
+  font-size: 20px;
+  margin-right: 20px;
+}
+.t-section .c-bell{
+  left: 15rem;
+  top: 40px;
+  position: absolute;
+  padding: 5px 0px 5px;
+  background: white;
+  border-radius: 7px;
+  z-index: 1;
+  min-width: 210px;
+  box-shadow: 0 0 37px rgb(8 21 66 / 5%);  
+}
+.home-card2 table tr:hover{
+  background: orange;
+}
+.t-section .c-bell li{
+  list-style: none;
+  margin-top: 10px;
+  color: #514e5f;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.t-section .c-bell li:hover{
+  background-color:#dcdae2 ;
+}
+.t-section .l-bell{
+  left: 16.5rem;
+  top: 135px;
+  position: absolute;
+  padding: 5px 0px 5px;
+  background: white;
+  border-radius: 7px;
+  z-index: 1;
+  min-width: 210px;
+  box-shadow: 0 0 37px rgb(8 21 66 / 5%);
+}
+.t-section .l-bell  li{
+  list-style: none;
+  margin-top: 10px;
+  color: #514e5f;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.t-section .l-bell  li:hover{
+  background-color:#dcdae2 ;
+}
+.t-section .card{
+  padding: 20px 0px 25px;
+}
+.t-section .d-table{
+  flex: 1;
+}
+.t-section{
+  margin-bottom: 30px;
+}
+.Home .Trade-card{
+  padding: 30px;
+}
+.Home .Trade-card .btn-success{
+  background-color: #68CF29;
+  border-color: #68CF29;
+}
+.Home .Trade-card .btn-danger{
+  background-color: #FF4C41;
+  border-color: #FF4C41;
+}
+.Home .card-bx img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  border-radius: 0.35rem;
+  object-fit: cover;
+}
+.Home .card-bx .card-info {
+  position: relative;
+  padding: 25px 30px;
+}
+.Home .Trade-card .drop-text{
+  margin-top: 6px;
+  margin-left: 5px;
+}
+.Home .Trade-card .ml-3, .mx-3 {
+  margin-left: 1rem !important;
+}
+.Home .Trade-card .fs-14{
+  color: #7e7e7e
+}
+.Home .trade-button{
+  background: none !important;
+  color: #000;
+  border: none;
+}
+.Home .form-wrapper .form-group {
+  margin-bottom: 12px;
+}
+.Home .form-wrapper{
+  margin-top: 20px;
+}
+.Home .trade-button:active{
+  background: none !important;
+  color: #000;
+  border: none;
+}
+.Home .trade-button:hover{
+  background: none !important;
+  color: #000;
+  border: none;
+}
+.Home .t-section .d-table p, .t-section .tbl-orders i{
+  margin-top: 12px;
+  font-size: 14px;
+}
+.Home .form-wrapper .input-group .form-control {
+  border: 1px solid #EEEEEE;
+  text-align: right;
+  border-top-right-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
+}
+.Home .card-body {
+  padding: 1.875rem;
+}
+.Home .card .v-text{
+  margin-right: 10px;
+}
+.Home .form-wrapper .input-group .input-group-prepend .input-group-text {
+  background: #5B5288;
+  border: 0;
+  justify-content: left;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 30px;
+  min-width: 170px;
+  color: white;
+  border-top-left-radius: 0.35rem;
+  border-bottom-left-radius: 0.35rem;
+  height: 100%;
+}
+.Home .last-section{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.Home .up-card{
+  margin-top: 30px !important;
+}
+.Home .up-card2{
+  margin-top: 55px !important;
+}
+.Home .card .cloned{
+  width: 108.714px;
+  margin-left: 20px;
+}
+.Home .card .cloned .items{
+  overflow: hidden;
+}
+.Home .card .cloned .items img{
+  width: 110px;
+}
+.Home .card .trade-btn{
+  background-color: #4f0f9e !important;
+}
+.Home .card-tabs.style-1 .nav-tabs {
+  border: 0;
+  border-radius: 0.35rem;
+  background-color: #f7f7f7;
+}
+.Home .card-tabs.style-1 .nav-tabs {
+  border: 0;
+  border-radius: 0.35rem;
+  background-color: #f7f7f7;
+}
+.Home .card-padding .shadow-hover tbody tr:hover {
+  background-color: #fff;
+}
+.Home .card-padding .shadow-hover tbody:hover {
+  background-color: rgb(250, 244, 244);
+}
+.Home .card-padding .btn-link{
+  left: 25rem;
+}
+.Home .card-padding{
+  padding: 20px !important;
 }
 
                                                               /* theme */
@@ -713,13 +970,6 @@ nav .example-collapse-text .all-notification .fa{
   padding: 40px 40px 0px;
   background-color: #2C254A ;
 }
-.s-section .card{
-  height: calc(100% - 40px);
-}
-.s-section .card-coin h2 {
-  font-size: 22px;
-}
-.s-section .currency-icon {
-  height: 65px;
-  width: 65px;
-}
+/* .footer{
+ 
+} */

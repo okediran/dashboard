@@ -26,9 +26,9 @@ export default function Navbar() {
                 <div className="container-fluid">
                     <div className="nav-header d-flex">
                         <Link to="" className="navbar-brand d-flex">
-                            <svg class="logo-abbr" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-					            <rect class="svg-logo-rect" width="50" height="50" rx="6" fill="#EB8153"></rect>
-					            <path class="svg-logo-path" d="M17.5158 25.8619L19.8088 25.2475L14.8746 11.1774C14.5189 9.84988 15.8701 9.0998 16.8205 9.75055L33.0924 22.2055C33.7045 22.5589 33.8512 24.0717 32.6444 24.3951L30.3514 25.0095L35.2856 39.0796C35.6973 40.1334 34.4431 41.2455 33.3397 40.5064L17.0678 28.0515C16.2057 27.2477 16.5504 26.1205 17.5158 25.8619ZM18.685 14.2955L22.2224 24.6007L29.4633 22.6605L18.685 14.2955ZM31.4751 35.9615L27.8171 25.6886L20.5762 27.6288L31.4751 35.9615Z" fill="white"></path>
+                            <svg className="logo-abbr" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+					            <rect className="svg-logo-rect" width="50" height="50" rx="6" fill="#EB8153"></rect>
+					            <path className="svg-logo-path" d="M17.5158 25.8619L19.8088 25.2475L14.8746 11.1774C14.5189 9.84988 15.8701 9.0998 16.8205 9.75055L33.0924 22.2055C33.7045 22.5589 33.8512 24.0717 32.6444 24.3951L30.3514 25.0095L35.2856 39.0796C35.6973 40.1334 34.4431 41.2455 33.3397 40.5064L17.0678 28.0515C16.2057 27.2477 16.5504 26.1205 17.5158 25.8619ZM18.685 14.2955L22.2224 24.6007L29.4633 22.6605L18.685 14.2955ZM31.4751 35.9615L27.8171 25.6886L20.5762 27.6288L31.4751 35.9615Z" fill="white"></path>
 				            </svg>
                             {toggle?<h3>ZENIX</h3>:null}
                         </Link>
@@ -50,14 +50,14 @@ export default function Navbar() {
                                <Collapse className="c-bell" in={bell}>
                                     <div className="example-collapse-text">
                                         <li>
-                                            <img src={img2} alt="profile-image"/>
+                                            <img src={img2} alt="god"/>
                                            <div className="profile-content">
-                                                 <h6 class="mb-1">Dr sultads Send you Photo</h6>
-                                                 <small class="d-block">29 July 2020 - 02:26 PM</small>
+                                                 <h6 className="mb-1">Dr sultads Send you Photo</h6>
+                                                 <small className="d-block">29 July 2020 - 02:26 PM</small>
                                            </div>
                                         </li>
-                                        <Link class="all-notification" to="">
-                                            <small>See all notifications</small> <i class="fa fa-arrow-right"></i>
+                                        <Link className="all-notification" to="">
+                                            <small>See all notifications</small> <i className="fa fa-arrow-right"></i>
                                         </Link>
                                      </div>
                             </Collapse>
@@ -68,29 +68,29 @@ export default function Navbar() {
                                     <ul className="tab-ul">
                                             <Tabs className="Tabs" defaultActiveKey="1">
                                                     <TabPane  className="TabPane" tab=" NOTES" key="1">
-                                                        <div class="card  mb-sm-3 mb-md-0 note_card">
+                                                        <div className="card  mb-sm-3 mb-md-0 note_card">
                                                             <div className="card-header card-head chat-list-header text-center">
                                                                     <i className="fa fa-plus"></i>
                                                                 <div>
-                                                                    <h6 class="mb-1">Notes</h6>
-									                                <p class="mb-0">Add New Nots</p>
+                                                                    <h6 className="mb-1">Notes</h6>
+									                                <p className="mb-0">Add New Nots</p>
                                                                 </div>
                                                                     <i className="fa fa-search search"></i>
                                                             </div>
-                                                            <div class="card-body contacts_body p-0 dz-scroll ps">
-                                                                <ul class="contacts">
-                                                                    <li class="active">
-                                                                        <div class="d-flex bd-highlight">
-                                                                            <div class="user_info">
+                                                            <div className="card-body contacts_body p-0 dz-scroll ps">
+                                                                <ul className="contacts">
+                                                                    <li className="active">
+                                                                        <div className="d-flex bd-highlight">
+                                                                            <div className="user_info">
                                                                                 <span>New order placed..</span>
                                                                                 <p>10 Aug 2020</p>
                                                                             </div>
-                                                                            <div class="ml-auto">
+                                                                            <div className="ml-auto">
                                                                                 <Button variant="secondary" size="sm">
-                                                                                    <i class="fa fa-pencil"></i>
+                                                                                    <i className="fa fa-pencil"></i>
                                                                                 </Button>
                                                                                 <Button className="btn-danger" variant="danger" size="sm">
-                                                                                     <i class="fa fa-trash"></i>
+                                                                                     <i className="fa fa-trash"></i>
                                                                                  </Button>
 											                                </div>
                                                                         </div>
@@ -100,38 +100,38 @@ export default function Navbar() {
                                                         </div>
                                                     </TabPane>
                                                     <TabPane  className="TabPane" tab="ALERTS" key="2">
-                                                        <div class="card  mb-sm-3 mb-md-0 note_card">
+                                                        <div className="card  mb-sm-3 mb-md-0 note_card">
                                                                 <div className="card-header card-head chat-list-header text-center">
                                                                         < DashOutlined className="fa fa-dot" />
                                                                     <div>
-                                                                        <h6 class="mb-1">Notications</h6>
-                                                                        <p class="mb-0">Show All</p>
+                                                                        <h6 className="mb-1">Notications</h6>
+                                                                        <p className="mb-0">Show All</p>
                                                                     </div>
                                                                         <i className="fa fa-search search"></i>
                                                                 </div>
-                                                                <div class="card-body contacts_body p-0 dz-scroll ps">
-                                                                    <ul class="contacts">
-                                                                        <li class="active name-first-letter">SEVER STATUS</li>
-                                                                        <li class="active">
-                                                                            <div class="d-flex-2 bd-highlight">
-                                                                                <div class="img_cont primary">
+                                                                <div className="card-body contacts_body p-0 dz-scroll ps">
+                                                                    <ul className="contacts">
+                                                                        <li className="active name-first-letter">SEVER STATUS</li>
+                                                                        <li className="active">
+                                                                            <div className="d-flex-2 bd-highlight">
+                                                                                <div className="img_cont primary">
                                                                                     <Avatar style={{ color: '#f56a00', backgroundColor: '#fde3cf', width: 35, height: 35 }}>KK</Avatar>
                                                                                 </div>
-                                                                                <div class="user_info">
+                                                                                <div className="user_info">
                                                                                     <span>David Nester Birthday</span>
-                                                                                    <p class="text-primary">Today</p>
+                                                                                    <p className="text-primary">Today</p>
 											                                    </div>
                                                                             </div>
                                                                         </li>
-                                                                        <li class="active name-first-letter">SOCIAL</li>
-                                                                        <li class="active">
-                                                                            <div class="d-flex-2 bd-highlight">
-                                                                                <div class="img_cont primary">
+                                                                        <li className="active name-first-letter">SOCIAL</li>
+                                                                        <li className="active">
+                                                                            <div className="d-flex-2 bd-highlight">
+                                                                                <div className="img_cont primary">
                                                                                     <Avatar style={{ color: '#68CF29', backgroundColor: '#ecfae4', width: 35, height: 35 }}>RU</Avatar>
                                                                                 </div>
-                                                                                <div class="user_info">
+                                                                                <div className="user_info">
                                                                                     <span>Perfection Simplified</span>
-                                                                                    <p class="text-secondary">Jame Smith commented on your status</p>
+                                                                                    <p className="text-secondary">Jame Smith commented on your status</p>
 											                                    </div>
                                                                             </div>
                                                                         </li>
@@ -140,42 +140,42 @@ export default function Navbar() {
                                                             </div>
                                                     </TabPane>
                                                     <TabPane  className="TabPane" tab=" CHART" key="3">
-                                                        <div class="card  mb-sm-3 mb-md-0 note_card">
+                                                        <div className="card  mb-sm-3 mb-md-0 note_card">
                                                             <div className="card-header card-head chat-list-header text-center">
                                                                     <i className="fa fa-plus"></i>
                                                                 <div>
-                                                                    <h6 class="mb-1">Notications</h6>
-                                                                    <p class="mb-0">Show All</p>
+                                                                    <h6 className="mb-1">Notications</h6>
+                                                                    <p className="mb-0">Show All</p>
                                                                 </div>
                                                                     < DashOutlined className="fa fa-dot" />
                                                             </div>
-                                                            <div class="card-body contacts_body p-0 dz-scroll ps">
-                                                                <ul class="contacts">
-                                                                    <li class="active name-first-letter">A</li>
-                                                                    <li class="active">
-                                                                        <div class="d-flex-2 bd-highlight">
-                                                                            <div class="img_cont primary">
+                                                            <div className="card-body contacts_body p-0 dz-scroll ps">
+                                                                <ul className="contacts">
+                                                                    <li className="active name-first-letter">A</li>
+                                                                    <li className="active">
+                                                                        <div className="d-flex-2 bd-highlight">
+                                                                            <div className="img_cont primary">
                                                                                 <Badge dot  style={{ backgroundColor: '#52c41a' }} offset={[0, 28]}>
                                                                                     <Avatar style={{ color: '#f56a00', backgroundColor: '#fde3cf', width: 35, height: 35 }}>KK</Avatar>
                                                                                 </Badge>
                                                                             </div>
-                                                                            <div class="user_info">
+                                                                            <div className="user_info">
                                                                                 <span>Archie Parker</span>
-                                                                                <p class="text-secondary">Kalid is online</p>
+                                                                                <p className="text-secondary">Kalid is online</p>
                                                                             </div>
                                                                         </div>
                                                                     </li>
-                                                                    <li class="active name-first-letter">B</li>
-                                                                    <li class="active">
-                                                                        <div class="d-flex-2 bd-highlight">
-                                                                            <div class="img_cont primary">
+                                                                    <li className="active name-first-letter">B</li>
+                                                                    <li className="active">
+                                                                        <div className="d-flex-2 bd-highlight">
+                                                                            <div className="img_cont primary">
                                                                                 <Badge dot offset={[0, 28]}>
                                                                                     <Avatar style={{ color: '#68CF29', backgroundColor: '#ecfae4', width: 35, height: 35 }}>RU</Avatar>
                                                                                 </Badge>
                                                                             </div>
-                                                                            <div class="user_info">
+                                                                            <div className="user_info">
                                                                                 <span>Alfie Mason</span>
-                                                                                <p class="text-secondary">Taherah left 7 mins ago</p>
+                                                                                <p className="text-secondary">Taherah left 7 mins ago</p>
                                                                             </div>
                                                                         </div>
                                                                     </li>
@@ -194,24 +194,24 @@ export default function Navbar() {
                                         <Timeline>
                                             <Timeline.Item color="orange">
                                                 <span>10 minutes ago</span>
-                                                <h6 class="mb-0">
+                                                <h6 className="mb-0">
                                                     Youtube, a video-sharing website, goes live 
-                                                    <strong class="text-primary">$500</strong>
+                                                    <strong className="text-primary">$500</strong>
                                                 </h6>
                                             </Timeline.Item>
                                             <Timeline.Item color="blue">
                                                 <span>20 minutes ago</span>
-                                                <h6 class="mb-0">
-                                                    <strong class="text-info">#XF-2356.</strong>
-                                                    <strong class="text-primary">$500</strong>
+                                                <h6 className="mb-0">
+                                                    <strong className="text-info">#XF-2356.</strong>
+                                                    <strong className="text-primary">$500</strong>
                                                 </h6>
-                                                <p class="mb-0">Quisque a consequat ante Sit amet magna at volutapt...</p>
+                                                <p className="mb-0">Quisque a consequat ante Sit amet magna at volutapt...</p>
                                             </Timeline.Item>
                                             <Timeline.Item color="red">
                                                 <span>30 minutes ago</span>
-                                                <h6 class="mb-0">
+                                                <h6 className="mb-0">
                                                     Youtube, a video-sharing website, goes live 
-                                                    <strong class="text-primary">$500</strong>
+                                                    <strong className="text-primary">$500</strong>
                                                 </h6>
                                             </Timeline.Item>
                                         </Timeline>

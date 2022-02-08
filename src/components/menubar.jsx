@@ -12,7 +12,7 @@ export default function Menubar() {
              <div className="main-profile">
                     <div className="image">
                         <img src={img} alt="" />
-                        <Link className="user-link" to=""><i class="fa fa-cog"></i></Link>
+                        <Link className="user-link" to=""><i className="fa fa-cog"></i></Link>
                     </div>
                     <h5>
                         <span className="font-w400">Hello,</span>
@@ -33,19 +33,19 @@ export default function Menubar() {
                                 <div className="example-collapse-text">
                                     <ul>
                                         <li>
-                                        <NavLink className='manulink' activeclassName="activeRoute" to="">Wallet</NavLink>
+                                        <NavLink className='manulink'  to="">Wallet</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink className='manulink' activeclassName="activeRoute" to="">Transactions</NavLink>
+                                            <NavLink className='manulink'  to="">Transactions</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink className='manulink' activeclassName="activeRoute" to="">Coin Details</NavLink>
+                                            <NavLink className='manulink'  to="">Coin Details</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink className='manulink' activeclassName="activeRoute" to="">portofolio</NavLink>
+                                            <NavLink className='manulink'  to="">portofolio</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink className='manulink'  activeclassName="activeRoute" to="">Market Capital</NavLink>
+                                            <NavLink className='manulink'   to="">Market Capital</NavLink>
                                         </li>
                                     </ul>
                                 </div>
