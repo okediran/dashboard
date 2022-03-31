@@ -1,22 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app/App';
-import Register from "./app/register";
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'antd/dist/antd.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-        <Routes>
-          <Route path="/" element={ <Register/>} />
-          <Route path="/app" element={ <App />} />
-        </Routes>
-      </Router>
+       <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
