@@ -3,8 +3,8 @@
     dashboard: '/dashboard',
     // auth
     succesful: '/succesful',
-    register: '/register'
-    
+    register: '/register',
+    login: '/login'
 };
 
 export default SLUGS
