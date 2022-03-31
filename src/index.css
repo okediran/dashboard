@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #435160
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: white;
+}
+#register{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+#register .register-background{
+  background: url(../src/asses/alexandre-van-thuan-mr9FouttLGY-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(7px);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+#register .card,#register input{
+  border: 0;
+  font-size: 25px;
+}
+#register .card{
+  box-shadow: 0 0.30rem 0.85rem rgba(29, 35, 44, 0.15);
+  border-radius:  5px;
+}
+#register input{
+  border: 0;
+  border-radius: 0;
+}
+#register  .form-check-input{
+  box-shadow: 0 0.30rem 0.85rem rgba(29, 35, 44, 0.15);
+}
+#register h1{
+  color: #6D7781;
+  font-family: 'Sofia', cursive;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#register .head-color{
+  background: #1FCE6D;
+  height: 40px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+#register .form-control{
+  padding: 20px 15px;
+  background: transparent;
+  border: 0;
+  border-bottom: 3px #1FCE6D solid;
+  color: #6D7781;
+  font-size: 20px;
+}
+/* #435160 */
+#register  .form-check{
+  margin-top: 30px;
+}
+#register .btn{
+  background: #1FCE6D;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: .3s ease-in-out;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+#register .btn:hover{
+  background: #16aa56;
+ transform: translateY(-10px);
+ transition: .5s;
+}
+#register .container{
+  padding: 0 20rem;
+}
+
+#register .card-body{
+  padding: 30px 3rem;
+}
+
+/* SUCESSFUL */
+
+#successful {
+  text-align: center;
+  padding: 40px 0;
+  background: #EBF0F5;
+  height: 100vh;
+}
+#successful  .card {
+  position: relative;
+  width: 600px;
+  height: 700px;
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#successful  .upper-side {
+  padding: 6rem;
+  background-color: #8BC34A;
+  display: block;
+  color: #fff;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+#successful  .checkmark {
+  font-weight: lighter;
+  fill: #fff;
+  margin: -3.5em 5rem 20px;
+}
+
+#successful  .status {
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2em;
+  margin-top: -.2em;
+  margin-bottom: 0;
+  color: white;
+}
+
+#successful  .lower-side {
+  padding: 2em 2em 5em 2em;
+  background: #fff;
+  display: block;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#successful  .message {
+  margin-top: 1.5em;
+  color: #757575;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+#successful  .contBtn {
+  position: relative;
+  top: 1em;
+  text-decoration: none;
+  background: #8bc34a;
+  color: #fff;
+  margin: auto;
+  font-size: 25px;
+  padding: .8em 3em;
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  border-radius: 25px;
+  -webkit-transition: all .4s ease;
+		-moz-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+}
+
+#successful  .contBtn:hover {
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -webkit-transition: all .4s ease;
+		-moz-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+}
