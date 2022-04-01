@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faEnvelope,faLock} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope,faLock} from '@fortawesome/free-solid-svg-icons'
 import { useFormik } from 'formik';
 import { Link } from "react-router-dom";
 import useDocumentTitle from "../resources/useDocumentTitle";
