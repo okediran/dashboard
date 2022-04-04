@@ -1,15 +1,53 @@
+/* DEFAULT */
 *{
   margin: 0;
   padding: 0;
   color: #435160
 }
 a{
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important; 
+  color: white !important;
 }
 a:hover{
   color: white;
 }
+
+/* HEADER */
+header{
+  background-color: #313a46;
+}
+
+header .navbar-brand{
+  color: #1FCE6D !important;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+header .dashboard{
+  font-size: 1.8rem;
+}
+
+header p{
+ font-size: 1.6rem; 
+ margin-bottom: 0;
+ color: white;
+ margin-top: 10px;
+}
+header form{
+  float: right;
+}
+header ul{
+  list-style: none;
+  gap: 20px;
+  cursor: pointer;
+}
+header ul span{
+  font-size: 20px;
+  color: #98a6ad;
+}
+
+
+/* REGISTER */
 #register{
   height: 100vh;
   display: flex;
@@ -18,7 +56,7 @@ a:hover{
   font-size: 20px;
 }
 #register .register-background{
-  background: url(../src/asses/alexandre-van-thuan-mr9FouttLGY-unsplash.jpg);
+  background: url(../src/asses/background/vasily-koloda-8CqDvPuo_kI-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,7 +1,13 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import useDocumentTitle from "../resources/useDocumentTitle";
-
+import { useDispatch } from "react-redux";
+import {isLogged} from "../resources/action";
 function Sucessful() {
+
+// dispatch
+const dispatch = useDispatch()
+
     function Page(props) {
         const titlePrefix = 'Fidepad School Managment System'
         useDocumentTitle(`${props.title}${titlePrefix}`)
@@ -47,7 +53,7 @@ function Sucessful() {
                                     <p className='message'>
                                         Congratulations, your account has been successfully created!
                                     </p>
-                                    <a href="#" className="contBtn">Continue</a>
+                                    <Link to="#" onClick={()=> dispatch(isLogged())} className="contBtn">Continue</Link>
                                 </div>
                             </div>
                         </div>

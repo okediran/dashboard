@@ -4,7 +4,9 @@
     // auth
     succesful: '/succesful',
     register: '/register',
-    login: '/login'
+    login: '/login',
+    error: '/error'
+
 };
 
 export default SLUGS
