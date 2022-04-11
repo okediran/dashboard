@@ -6,7 +6,6 @@ import './index.css';
 import { createStore } from "redux";
 import allReducer from "./resources/reducers";
 import { Provider } from "react-redux";
-
 const mystore = createStore(
   allReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__&& window.__REDUX_DEVTOOLS_EXTENSION__()

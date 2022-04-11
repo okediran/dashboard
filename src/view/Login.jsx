@@ -41,6 +41,7 @@ function Login() {
           <div className="card-body">
             <form onSubmit={handleSubmit}>
               <h1>Login</h1>
+              <p style={{fontSize:"22px"}}>Enter your email address and password to access account.</p>
               <div className="mb-3">
                 <FontAwesomeIcon className="svg" icon={faEnvelope} />
                 <input   name="email" value={values.email} onChange={handleChange} placeholder="Email" type="email" className="form-control" />

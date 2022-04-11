@@ -1,6 +1,6 @@
  const SLUGS = {
     // private
-    dashboard: '/dashboard',
+    dashboard:'/',
     // auth
     succesful: '/succesful',
     register: '/register',
