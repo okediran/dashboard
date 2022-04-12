@@ -115,7 +115,7 @@ header ul svg{
   font-size: 20px;
 }
 #register .register-background{
-  background: url(../src/asses/background/vasily-koloda-8CqDvPuo_kI-unsplash.jpg);
+  background: url(../src/asset/background/vasily-koloda-8CqDvPuo_kI-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -415,3 +415,4 @@ footer a{
 footer a:hover{
   color: #0bb988;
 }
+/* 1896 */

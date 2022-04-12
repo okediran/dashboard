@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import { Avatar } from 'antd';
 import { useState } from "react";
-import tel1 from "../../asses/users/te1.jpg";
+import tel1 from "../../asset/users/te1.jpg";
 import { SearchOutlined,LogoutOutlined   } from '@ant-design/icons';
 import {  faUserAlt,faUserCheck,faLifeRing} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
