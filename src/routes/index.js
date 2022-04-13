@@ -15,7 +15,7 @@ function Routes() {
 
     return ( 
             <div>
-                { isLogged ?  <PublicRoutes /> : <PrivateRoutes/>}
+                { isLogged ? <PrivateRoutes/>  :  <PublicRoutes />}
             </div>
         ); 
 }
