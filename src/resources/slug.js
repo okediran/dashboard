@@ -1,10 +1,12 @@
  const SLUGS = {
     // private
-    dashboard: '/dashboard',
+    dashboard:'/',
     // auth
     succesful: '/succesful',
     register: '/register',
-    login: '/login'
+    login: '/login',
+    error: '/error'
+
 };
 
 export default SLUGS

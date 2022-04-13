@@ -1,9 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faEnvelope,faLock} from '@fortawesome/free-solid-svg-icons'
 import { useFormik } from 'formik';
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useDocumentTitle from "../resources/useDocumentTitle";
 import * as Yup from "yup";
+import SLUGS from "../resources/slug";
+
 function Register() {
 
   //  title
@@ -12,6 +14,9 @@ function Register() {
     useDocumentTitle(`${props.title}${titlePrefix}`)
     return <h2>{props.content}</h2>
   };
+
+// navigation
+  const navigate = useNavigate();
 
   // Form
   const {handleSubmit,handleChange,values,touched,errors} = useFormik({
@@ -28,9 +33,9 @@ function Register() {
       confirm_password: Yup.string().required("Required")
 
     }),
-    onSubmit:({username,email,password,retype_password})=>{
-      if (password===retype_password) {
-          console.log(`username:${values.username},email:${values.email},password:${values.password},retype_password:${values.retype_password}`);
+    onSubmit:({username,email,password,confirm_password})=>{
+      if (password===confirm_password) {
+        navigate(SLUGS.succesful)
       }
     }
   });
@@ -47,39 +52,39 @@ function Register() {
           <div className="card-body">
             <form onSubmit={handleSubmit}>
               <h1>Register</h1>
-              <div class="mb-3">
+              <div className="mb-3">
                 <FontAwesomeIcon className="svg" icon={faUser} />
-                <input name="username" value={values.username} onChange={handleChange}  placeholder="Username" type="text" class="form-control" />
+                <input name="username" value={values.username} onChange={handleChange}  placeholder="Username" type="text" className="form-control" />
                 {touched.username && errors.username ? (
                   <div>{errors.username}</div>
                 ):null}
               </div>
-              <div class="mb-3">
+              <div className="mb-3">
                 <FontAwesomeIcon className="svg" icon={faEnvelope} />
-                <input   name="email" value={values.email} onChange={handleChange} placeholder="Email" type="email" class="form-control" />
+                <input name="email" value={values.email} onChange={handleChange} placeholder="Email" type="email" className="form-control" />
                 {touched.email && errors.email ? (
                   <div>{errors.email}</div>
                 ):null}
               </div>
-              <div class="mb-3">
+              <div className="mb-3">
                 <FontAwesomeIcon className="svg" icon={faLock } />
-                <input   name="password" value={values.password} onChange={handleChange} placeholder="Password" type="password" class="form-control" />
+                <input name="password" value={values.password} onChange={handleChange} placeholder="Password" type="password" className="form-control" />
                 {touched.password && errors.password? (
                   <div>{errors.password}</div>
                 ):null}
               </div>
-              <div class="mb-3">
+              <div className="mb-3">
                 <FontAwesomeIcon className="svg" icon={faLock } />
-                <input    name="confirm_password" value={values.confirm_password} onChange={handleChange} placeholder="confirm password" type="password" class="form-control" />
+                <input name="confirm_password" value={values.confirm_password} onChange={handleChange} placeholder="confirm password" type="password" className="form-control" />
                 {touched.confirm_password && errors.confirm_password ? (
                   <div>{errors.confirm_password}</div>
                 ):null}
               </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input"/>
-                <label class="form-check-label" for="exampleCheck1">Accept the terms and politicies</label>
+              <div className="mb-3 form-check">
+                <input type="checkbox" className="form-check-input"/>
+                <label className="form-check-label" htmlFor="exampleCheck1">Accept the terms and politicies</label>
               </div>
-              <Link to="/succesful"><button type="submit"  class="btn btn-primary form-control">Sign up</button></Link>
+              <button type="submit" className="btn btn-primary form-control">Sign up</button>
             </form>
           </div>
         </div>

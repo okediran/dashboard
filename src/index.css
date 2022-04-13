@@ -1,15 +1,112 @@
+/* DEFAULT */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   margin: 0;
   padding: 0;
   color: #435160
 }
 a{
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important; 
 }
 a:hover{
   color: white;
 }
+
+/* HEADER */
+header{
+  background-color: white;
+}
+header .navbar-brand{
+  color: #0acf97 !important;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+header p{
+ font-size: 1.6rem; 
+ margin-bottom: 0;
+ margin-top: 10px;
+}
+header form{
+  float: right;
+}
+header ul{
+  list-style: none;
+  gap: 20px;
+  cursor: pointer;
+}
+header ul .span{
+  font-size: 17px;
+  color: #98a6ad;
+}
+header ul .change{
+  font-size: 17px;
+  color: black;
+}
+header .search{
+  background: #eaebed;
+  border-radius: 10px;
+  padding-left: 20px;
+  height: 3.5rem;
+  margin-right: 15px;
+}
+header .search input{
+  background: none;
+  border: none;
+  font-size: 20px;
+  width: 20rem;
+  height: 3.5rem;
+  outline: none;
+}
+header ul li .dropdown-header{
+  font-size: 18px;
+}
+header ul li .hide{
+  opacity: 0; 
+  position: absolute;
+  font-size: 18px;
+  width: 220px;
+  color: #98a6ad;
+  margin-top: 5rem;
+  transition-duration: .7s;
+  transition-property: margin-top,opacity ;
+  padding: 20px 10px;
+  margin-left:-20px;
+  background: white;
+  box-shadow: 0 0.30rem 0.85rem rgba(29, 35, 44, 0.15);
+  z-index: 1;
+} 
+header ul li .show{
+  opacity: 1;
+  position: absolute;
+  font-size: 18px;
+  width: 220px;
+  color: #98a6ad;
+  margin-top: 1.2rem;
+  transition: margin-top .5s;
+  padding: 20px 10px;
+  margin-left:-20px;
+  background: white;
+  box-shadow: 0 0.30rem 0.85rem rgba(29, 35, 44, 0.15);
+  z-index: 1;
+}
+
+header .search svg{
+  fill: #0acf97 !important;
+  font-size: 30px;
+  margin-right: 20px;
+}
+header ul .dropdown-item{
+  margin-top: 15px;
+  padding: 5px 10px;
+}
+header ul svg{
+  margin-right: 10px;
+}
+
+/* REGISTER */
 #register{
   height: 100vh;
   display: flex;
@@ -18,7 +115,7 @@ a:hover{
   font-size: 20px;
 }
 #register .register-background{
-  background: url(../src/asses/alexandre-van-thuan-mr9FouttLGY-unsplash.jpg);
+  background: url(../src/asset/background/vasily-koloda-8CqDvPuo_kI-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,7 +150,7 @@ a:hover{
 }
 
 #register .head-color{
-  background: #1FCE6D;
+  background: #0acf97;
   height: 40px;
   border-radius: 5px 5px 0px 0px;
 }
@@ -61,16 +158,15 @@ a:hover{
   padding: 20px 15px;
   background: transparent;
   border: 0;
-  border-bottom: 3px #1FCE6D solid;
+  border-bottom: 3px #0acf97 solid;
   color: #6D7781;
   font-size: 20px;
 }
-/* #435160 */
 #register  .form-check{
   margin-top: 30px;
 }
 #register .btn{
-  background: #1FCE6D;
+  background: #0acf97;
   border: 0;
   border-radius: 10px;
   color: #fff;
@@ -113,7 +209,7 @@ a:hover{
 
 #successful  .upper-side {
   padding: 6rem;
-  background-color: #8BC34A;
+  background-color: #0acf97;
   display: block;
   color: #fff;
   border-top-right-radius: 8px;
@@ -175,7 +271,148 @@ a:hover{
   -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
   box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
   -webkit-transition: all .4s ease;
-		-moz-transition: all .4s ease;
-		-o-transition: all .4s ease;
-		transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
 }
+
+/* HOME */
+#Home .card{
+  border: none;
+}
+
+/* slidebar */
+#Sidebar .card ul{
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+#Sidebar .card ul a{
+ margin-top: 30px;
+ display: flex;
+ padding:20px ;
+ border-radius: 20px;
+}
+#Sidebar .card ul svg{
+  font-size: 25px;
+}
+#Sidebar .card ul a:hover{
+  background-color: #0acf97;
+ }
+ #Sidebar .card ul a:hover span{
+  color: white;
+ }
+ #Sidebar .card ul a:hover svg{
+  fill: white;
+ }
+ #Sidebar .card ul a li span{
+  margin-left: 25px;
+  transform: translateY(-3px);
+ }
+ #Sidebar a.active{
+  color: white;
+  background-color: #0acf97;
+ }
+ #Sidebar a.active span,#Sidebar a.active svg{
+  fill: white ;
+  color: white;
+ }
+
+ /* DASHBOARD */
+ #dashboard .card{
+  box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+  border: none;
+  color: #6c757d !important;
+ }
+ #dashboard .card h4,#dashboard .card h3,#dashboard .card h5{
+  color: #6c757d;
+ }
+ #dashboard .card1 h4 span{
+  transform: translateY(-5px);
+ }
+ #dashboard .card .svg{
+  background: #e6f3ef;
+  padding: 10px;
+  border-radius: 5px;
+ }
+ #dashboard .total svg{
+   fill: white !important;
+  transform: translateY(-5px);
+ }
+ #dashboard .total a:hover svg{
+  fill: black !important;
+ }
+ #dashboard h5 svg:nth-child(1){
+   fill: #6c757d;
+ }
+ #dashboard svg:nth-child(1){
+  fill: #0acf97;
+}
+#dashboard .card h5 span{
+  transform: translateY(-5px);
+} 
+#dashboard #scheduleCard svg{
+  fill: #6c757d;
+  font-size: 18px;
+}
+#dashboard #scheduleCard p{
+  font-size: 17px;
+}
+#dashboard .head svg{
+  fill: #6c757d;
+  font-size: 25px;
+}
+#dashboard .head h4{
+  font-size: 23px;
+  font-weight: 500;
+}
+#dashboard .card table tr th{
+  font-weight: 400;
+  font-size: 20px;
+}
+#dashboard .card table tbody{
+  font-weight: 400;
+  font-size: 20px;
+  border: 1px solid #e3eaef;
+}
+#dashboard .card table tbody tr{
+  background-color:#f1f3fa ;
+}
+#dashboard .pagination li{
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+#dashboard .pagination li:hover{
+  background-color: #e3eaef;
+  padding: 10px;
+}
+#dashboard .card .header-title{
+ font-size: 24px;
+ font-weight: 600;
+}
+#dashboard .card .dataTables_length label,.dataTables_info{
+  font-size: 19px;
+}
+#dashboard .card #basic-datatable{
+  border-top: #e3eaef 1px solid;
+  margin-top: 15px;
+}
+#dashboard .card #basic-datatable th{
+ outline: none;
+}
+/* FOOTER */
+footer{
+  border-top: 1px solid rgba(152,166,173,.2);
+  padding: 19px 30px 20px;
+  right: 0;
+  margin-top: 30px;
+  font-size: 19px;
+}
+footer a{
+  color: #0acf97;
+}
+footer a:hover{
+  color: #0bb988;
+}
+/* 1896 */

@@ -4,6 +4,7 @@ import { useFormik } from 'formik';
 import { Link } from "react-router-dom";
 import useDocumentTitle from "../resources/useDocumentTitle";
 import * as Yup from "yup";
+
 function Login() {
 
   //  title
@@ -40,21 +41,22 @@ function Login() {
           <div className="card-body">
             <form onSubmit={handleSubmit}>
               <h1>Login</h1>
-              <div class="mb-3">
+              <p style={{fontSize:"22px"}}>Enter your email address and password to access account.</p>
+              <div className="mb-3">
                 <FontAwesomeIcon className="svg" icon={faEnvelope} />
-                <input   name="email" value={values.email} onChange={handleChange} placeholder="Email" type="email" class="form-control" />
+                <input   name="email" value={values.email} onChange={handleChange} placeholder="Email" type="email" className="form-control" />
                 {touched.email && errors.email ? (
                   <div>{errors.email}</div>
                 ):null}
               </div>
-              <div class="mb-3">
+              <div className="mb-3">
                 <FontAwesomeIcon className="svg" icon={faLock } />
-                <input   name="password" value={values.password} onChange={handleChange} placeholder="Password" type="password" class="form-control" />
+                <input   name="password" value={values.password} onChange={handleChange} placeholder="Password" type="password" className="form-control" />
                 {touched.password && errors.password? (
                   <div>{errors.password}</div>
                 ):null}
               </div>
-              <Link to="/succesful"><button type="submit"  class="btn btn-primary form-control">Sign in</button></Link>
+              <Link to="/succesful"><button type="submit"  className="btn btn-primary form-control">Sign in</button></Link>
             </form>
           </div>
         </div>
