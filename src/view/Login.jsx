@@ -17,15 +17,15 @@ function Login() {
   // Form
   const {handleSubmit,handleChange,values,touched,errors} = useFormik({
     initialValues:{
-      email:"",
+      username:"",
       password:""
     },
     validationSchema:Yup.object({
-      email: Yup.string().required("Required"),
+      username: Yup.string().required("Required"),
       password: Yup.string().min(8,'Login must be longer than 8 characters').required(""),
     }),
-    onSubmit:({email,password})=>{
-        console.log(`email:${values.email},password:${values.password}`);
+    onSubmit:({username,password})=>{
+        console.log(`username:${values.username},password:${values.password}`);
     }
   });
   return (
@@ -40,23 +40,35 @@ function Login() {
           </div>
           <div className="card-body">
             <form onSubmit={handleSubmit}>
-              <h1>Login</h1>
-              <p style={{fontSize:"22px"}}>Enter your email address and password to access account.</p>
+              <h1>LOGIN</h1>
+              <p style={{fontSize:"22px"}}>Enter your username address and password to access account.</p>
               <div className="mb-3">
-                <FontAwesomeIcon className="svg" icon={faEnvelope} />
-                <input   name="email" value={values.email} onChange={handleChange} placeholder="Email" type="email" className="form-control" />
-                {touched.email && errors.email ? (
-                  <div>{errors.email}</div>
+                <div className='input-div'>
+                  <FontAwesomeIcon className="svg" icon={faEnvelope} />
+                  <input name="username" value={values.username} onChange={handleChange} placeholder="Username" type="username" className="form-control input" />
+                </div>
+                {touched.username && errors.username ? (
+                  <div>{errors.username}</div>
                 ):null}
               </div>
               <div className="mb-3">
-                <FontAwesomeIcon className="svg" icon={faLock } />
-                <input   name="password" value={values.password} onChange={handleChange} placeholder="Password" type="password" className="form-control" />
+                <div className='input-div'>
+                  <FontAwesomeIcon className="svg" icon={faLock } />
+                  <input name="password" value={values.password} onChange={handleChange} placeholder="Password" type="password" className="form-control input" />
+                </div>
                 {touched.password && errors.password? (
                   <div>{errors.password}</div>
                 ):null}
               </div>
               <Link to="/succesful"><button type="submit"  className="btn btn-primary form-control">Sign in</button></Link>
+                <div class="form-group d-md-flex justify-between mt-4">
+                  <div class="">
+                      <input type="checkbox" className='form-check-input'/>Remember Me
+                  </div>
+                  <div class=" text-md-right">
+                    <Link to="#" style={{color: "#fff"}}>Forgot Password</Link>
+                  </div>
+                </div>
             </form>
           </div>
         </div>

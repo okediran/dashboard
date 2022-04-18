@@ -6,7 +6,7 @@
 *{
   margin: 0;
   padding: 0;
-  color: #435160
+  color: #757575
 }
 a{
   text-decoration: none !important; 
@@ -53,7 +53,7 @@ header .search{
   margin-right: 15px;
 }
 header .search input{
-  background: none;
+  background: none !important;
   border: none;
   font-size: 20px;
   width: 20rem;
@@ -115,11 +115,11 @@ header ul svg{
   font-size: 20px;
 }
 #register .register-background{
-  background: url(../src/asset/background/vasily-koloda-8CqDvPuo_kI-unsplash.jpg);
+  background-color: #313a46;;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(7px);
+  filter: blur(5px);
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -129,8 +129,8 @@ header ul svg{
   font-size: 25px;
 }
 #register .card{
-  box-shadow: 0 0.30rem 0.85rem rgba(29, 35, 44, 0.15);
   border-radius:  5px;
+  background: none;
 }
 #register input{
   border: 0;
@@ -140,53 +140,64 @@ header ul svg{
   box-shadow: 0 0.30rem 0.85rem rgba(29, 35, 44, 0.15);
 }
 #register h1{
-  color: #6D7781;
-  font-family: 'Sofia', cursive;
+  color: white;
   font-weight: bold;
   font-size: 3rem;
   text-align: center;
   margin-bottom: 15px;
   text-align: center;
 }
-
-#register .head-color{
-  background: #0acf97;
-  height: 40px;
-  border-radius: 5px 5px 0px 0px;
-}
 #register .form-control{
-  padding: 20px 15px;
-  background: transparent;
-  border: 0;
-  border-bottom: 3px #0acf97 solid;
-  color: #6D7781;
+  padding: 16px 15px;
   font-size: 20px;
+  border-radius: 30px;
+  outline: none !important;
+}
+#register .input{
+  background: rgba(250,250, 250, 0.7) !important;
+  border: 1px solid transparent;
+  padding-left: 63px;
+  transition: .5s;
+  outline:#0acf97 ;
+  border: #0acf97 2px solid;
+}
+#register .input-div{
+  display: flex;
+  margin-top: 40px;
 }
 #register  .form-check{
   margin-top: 30px;
 }
 #register .btn{
-  background: #0acf97;
-  border: 0;
-  border-radius: 10px;
+  background:  #0acf97;
   color: #fff;
   cursor: pointer;
   font-size: 2rem;
-  transition: .3s ease-in-out;
+  transition: .5s ease;
   padding: 10px 0;
   margin-top: 40px;
+  box-shadow:inset 0 0 0 0 #0acf97;
+  border: none;
 }
-#register .btn:hover{
-  background: #16aa56;
- transform: translateY(-10px);
- transition: .5s;
+#register .btn:hover {
+  transition: .5s all ease;
+  box-shadow:inset 700px 0 0 0 #618277;
+  color: white;
 }
 #register .container{
   padding: 0 20rem;
 }
 
 #register .card-body{
-  padding: 30px 3rem;
+  padding: 30px 8rem;
+}
+#register .card-body svg{
+  background-color: white;
+  padding: 20px;
+  border-radius: 100%;
+  z-index: 1;
+  cursor: pointer;
+  margin-right: -60px;
 }
 
 /* SUCESSFUL */

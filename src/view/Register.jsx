@@ -15,7 +15,7 @@ function Register() {
     return <h2>{props.content}</h2>
   };
 
-// navigation
+  // navigation
   const navigate = useNavigate();
 
   // Form
@@ -53,38 +53,46 @@ function Register() {
             <form onSubmit={handleSubmit}>
               <h1>Register</h1>
               <div className="mb-3">
-                <FontAwesomeIcon className="svg" icon={faUser} />
-                <input name="username" value={values.username} onChange={handleChange}  placeholder="Username" type="text" className="form-control" />
-                {touched.username && errors.username ? (
+                <div className='input-div'>
+                  <FontAwesomeIcon icon={faUser} />
+                  <input name="username" value={values.username} onChange={handleChange}  placeholder="Username" type="text" className="form-control input" /> 
+                </div>
+                  {touched.username && errors.username ? (
                   <div>{errors.username}</div>
                 ):null}
               </div>
               <div className="mb-3">
-                <FontAwesomeIcon className="svg" icon={faEnvelope} />
-                <input name="email" value={values.email} onChange={handleChange} placeholder="Email" type="email" className="form-control" />
+                <div className='input-div'>
+                  <FontAwesomeIcon  icon={faEnvelope}/>
+                  <input name="email" value={values.email} onChange={handleChange} placeholder="Email" type="email" className="form-control input"/> 
+                </div>
                 {touched.email && errors.email ? (
                   <div>{errors.email}</div>
                 ):null}
               </div>
               <div className="mb-3">
-                <FontAwesomeIcon className="svg" icon={faLock } />
-                <input name="password" value={values.password} onChange={handleChange} placeholder="Password" type="password" className="form-control" />
+                <div className='input-div'>
+                  <FontAwesomeIcon icon={faLock }/>
+                  <input name="password" value={values.password} onChange={handleChange} placeholder="Password" type="password"className="form-control input" />
+                </div>
                 {touched.password && errors.password? (
                   <div>{errors.password}</div>
                 ):null}
               </div>
-              <div className="mb-3">
-                <FontAwesomeIcon className="svg" icon={faLock } />
-                <input name="confirm_password" value={values.confirm_password} onChange={handleChange} placeholder="confirm password" type="password" className="form-control" />
+              <div className="mb-3 ">
+                <div className='input-div'>
+                  <FontAwesomeIcon  icon={faLock }/>
+                  <input name="confirm_password" value={values.confirm_password} onChange={handleChange} placeholder="confirm password" type="password" className="form-control input" /> 
+                </div>
                 {touched.confirm_password && errors.confirm_password ? (
                   <div>{errors.confirm_password}</div>
                 ):null}
               </div>
-              <div className="mb-3 form-check">
+              <div className="mb-3 input-div form-check">
                 <input type="checkbox" className="form-check-input"/>
-                <label className="form-check-label" htmlFor="exampleCheck1">Accept the terms and politicies</label>
+                <label className="form-check- ml-5" htmlFor="exampleCheck1">Accept the terms and politicies</label>
               </div>
-              <button type="submit" className="btn btn-primary form-control">Sign up</button>
+              <button type="submit" className="btn form-control">Sign up</button>
             </form>
           </div>
         </div>
