@@ -301,7 +301,7 @@ header ul svg{
 #Sidebar .card ul a{
  margin-top: 30px;
  display: flex;
- padding:20px ;
+ padding:20px 0;
  border-radius: 20px;
 }
 #Sidebar .card ul svg{
@@ -316,7 +316,7 @@ header ul svg{
  #Sidebar .card ul a:hover svg{
   fill: white;
  }
- #Sidebar .card ul a li span{
+ #Sidebar .card ul a span{
   margin-left: 25px;
   transform: translateY(-3px);
  }
@@ -328,6 +328,30 @@ header ul svg{
   fill: white ;
   color: white;
  }
+ #Sidebar .svg-arrow{
+  margin-left: 150px !important;
+  transition: .5s ease;
+  margin-top: 5px;
+ }
+ #Sidebar .svg-arrow-change{
+  margin-left: 150px !important;
+  transform: rotateZ(90deg) !important;
+  transition: .5s ease;
+ }
+ #Sidebar ul li ul{
+   margin-left: 50px;
+ }
+#Sidebar ul li ul a{
+  background: none !important;
+  margin-top: 10px !important; 
+  color: #6c757d !important;
+}
+#Sidebar ul li ul a:hover{
+ color: #0acf97 !important;
+}
+#Sidebar ul li ul a.junior_active{
+  color: #0acf97;
+}
 
  /* DASHBOARD */
  #dashboard .card{
@@ -425,5 +449,13 @@ footer a{
 }
 footer a:hover{
   color: #0bb988;
+}
+/* LOADER */
+.sweet-loading{
+  background-color: #313a46;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* 1896 */
